@@ -1,0 +1,78 @@
+body {
+    background-color: black;
+    font-size: 45px;
+    color:ivory;
+    margin: 50px 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+h1 {
+    display: block;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+button {
+       margin-left: 150px;
+       margin-top: 50px;
+    	text-align: center;
+	font-size: 42px;
+	font-family: 'Raleway', sans-serif;
+	color: hsl(220, 88%, 41%);
+	width: 350px;
+	height: 100px;
+		border-radius: 30px;
+	text-shadow: 
+		0px 5px hsl(220, 87%, 22%), 
+		0px 10px 10px #0003;
+	box-shadow: 
+		0px 0px 0px 15px hsl(0, 89%, 41%),
+		0px 10px 0px 15px hsl(0, 89%, 41%),
+		0px 20px 20px 15px #0003;
+	cursor: pointer;
+	border-radius: 100px 30px 100px 30px;
+
+}
+
+button > a {
+	margin-top: 20px;
+	transform: rotate(-3deg);
+    font-family:'Raleway', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+button:hover {
+	animation: .8s morph ease infinite;
+}
+
+button:hover a {
+	animation: .8s rot ease infinite;
+}
+
+@keyframes morph {
+	0% {
+		border-radius: 100px 30px 100px 30px;
+	} 50% {
+		border-radius: 30px 100px 30px 100px;
+	} 100% {
+		border-radius: 100px 30px 100px 30px;
+	}
+}
+
+@keyframes rot {
+	0% {
+		transform: rotate(-3deg);
+	} 50% {
+		transform: rotate(3deg);
+	} 100% {
+		transform: rotate(-3deg);
+	}
+
+}
